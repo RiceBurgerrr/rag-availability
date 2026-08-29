@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===================================
+# 프로젝트 전용
+# ===================================
+
+# 비밀정보 (.env는 위 템플릿에 이미 있음)
+*.token
+hf_token*
+**/secrets*
+
+# 대용량 — 재생성 가능하거나 외부에서 받음
+data/
+models/
+indexes/
+runs/
+attacks/
+
+*.npy
+*.index
+*.faiss
+*.pkl
+*.bin
+*.safetensors
+*.zip
